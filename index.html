@@ -71,11 +71,21 @@
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<!--<span class="icon featured fa-comments"></span>-->
-								<a class="image featured"><img src="images/sql.png" alt="" /></a>
+								<a class="image featured"><img id="hover-image" src="images/sql.png" alt="" onmouseover="changeImage()" onmouseout="resetImage()"/></a>
 								<h3>SQL</h3>
 								<p>Sql, PostgreSql , SSMS, BigQuery.</p>
 							</section>
 						</div>
+						
+						<script>
+							function changeImage() {
+								document.getElementById("hover-image").src = "images/covid19.jpeg"; // Add the path to the new image here
+							}
+						
+							function resetImage() {
+								document.getElementById("hover-image").src = "images/sql.png";
+							}
+						</script>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<!-- <span class="icon solid featured fa-camera-retro"></span> -->
