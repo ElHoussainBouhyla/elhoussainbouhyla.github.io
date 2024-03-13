@@ -6,130 +6,137 @@
 -->
 <html>
 	<head>
-		<title>hussain.wiki</title>
+		<title>Hussain.wiki</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 	</head>
 	<body class="is-preload">
-		<!-- ... (your existing HTML code) ... -->
 
-		<script>
-			function copyEmailToClipboard() {
-				var email = 'elhoussainbouhyla@gmail.com'; // Replace with your email address
-	
-				// Create a temporary input element
-				var tempInput = document.createElement('input');
-				tempInput.value = email;
-	
-				// Append the input to the body
-				document.body.appendChild(tempInput);
-	
-				// Select the input's text
-				tempInput.select();
-				tempInput.setSelectionRange(0, 99999); // For mobile devices
-	
-				// Copy the text to the clipboard
-				document.execCommand('copy');
-	
-				// Remove the temporary input
-				document.body.removeChild(tempInput);
-	
-				// Optionally, you can provide feedback to the user
-				alert('Email address copied to clipboard: ' + email);
-			}
-		</script>
-
-		
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 
 		<!-- Home -->
 			<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/husi.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/MyPic.jpg" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h1>Hi. I'm <strong> Hussain </strong>.</h1>
 							</header>
 							<p>Hi. I'm <strong>El Houssain Bouhyla (Hussain)</strong>, I got the Google Data Analytics Professional <a href="https://coursera.org/share/34e6c6ec0436d62036069d2d7e9414b1" target="_blank"> Certificate</a> in "16/11/2023",  I'm currently learning data analysis. thes is my <a href="https://linkedin.com/in/elhoussainbouhyla" target="_blank">Linkedin</a>.</p>
-							
 						</div>
 					</div>
 				</div>
 			</article>
 
 		<!-- Work -->
-			<article id="work" class="wrapper style2">
+			
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2> My data analysis skills.</h2>
-						<p> "Make the best choice using data"</p>
+						<h2>Here’s some stuff I made recently.</h2>
+						<p>"Make the best choice using data"</p>
 					</header>
-					<div class="row aln-center">
+					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<!--<span class="icon featured fa-comments"></span>-->
-								<a class="image featured"><img id="hover-image" src="images/sql.png" alt="" onmouseover="changeImage()" onmouseout="resetImage()"/></a>
-								<h3>SQL</h3>
-								<p>Sql, PostgreSql , SSMS, BigQuery.</p>
-							</section>
+							<article class="box style2">
+								<a href="Covid19Project2.html" class="image featured" target="_blank"><img src="images/covid19.jpg" alt="" /></a>
+								<h3><a href="Covid19Project2.html" target="_blank" > Covid 19 </a></h3>
+								<p>Covid 19 kills more than 6 million people.</p>
+							</article>
 						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="ExcelProject2.html" class="image featured" target="_blank"><img src="images/bikes.jpg" alt="" /></a>
+								<h3><a href="ExcelProject2.html" target="_blank">Bicycle buyers</a></h3>
+								<p>Why do men buy more bikes than women?.</p>
+							</article>
+						</div>
+						<!--<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">Lorem ipsum</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<h3><a href="#">Tempus dolore</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+								<h3><a href="#">Feugiat aliquam</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+								<h3><a href="#">Sed amet ornare</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div> 
+							-->
+					</div>
+					<footer>
 						
-						<script>
-							function changeImage() {
-								document.getElementById("hover-image").src = "images/covid19.jpeg"; // Add the path to the new image here
-							}
+						<a href="#contact" class="button large scrolly">Get in touch with me</a>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Gmail: " elhoussainbouhyla@gmail.com "</h2>
 						
-							function resetImage() {
-								document.getElementById("hover-image").src = "images/sql.png";
-							}
-						</script>
-						
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<!-- <span class="icon solid featured fa-camera-retro"></span> -->
-								<a class="image featured"><img src="images/python.png" alt="" /></a>
-								<h3>PYTHON</h3>
-								<p>Pandas, Matplotlib, Numpy, Jupyter notebook.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<!-- <span class="icon featured fa-thumbs-up"></span> -->
-								<a class="image featured"><img src="images/tableau.png" alt="" /></a>
-								<h3>TABLEAU</h3>
-								<p>Create a visualization using Tableau.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<!-- <span class="icon featured fa-thumbs-up"></span> -->
-								<a href="https://coursera.org/share/34e6c6ec0436d62036069d2d7e9414b1" class="image featured" target="_blank"><img src="images/sertificate.png" alt="" /></a>
-								<h3>Certificate</h3>
-								<p>Google Data Analytics Professional Certificate.</p>
-							</section>
-						</div>
+					</header>
+					
 						<div class="col-12">
 							<hr />
-							
-							<h2>elhoussainbouhyla@gmail.com</h2>
-							
+							<h3>Find me on ...</h3>
 							<ul class="social">
+								
 								<li><a href="https://github.com/ElHoussainBouhyla" class="icon brands fa-github" target="_blank"><span class="label" >Github</span> </a></li>
 								<li><a href="https://www.linkedin.com/in/elhoussainbouhyla" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-								<li>
-									<a href="javascript:void(0);" class="gb_7d gb_Fc gb_5d" aria-label="Gmail" title="Gmail" onclick="copyEmailToClipboard()">
-										<img class="gb_Kc" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r5.png" 
-											srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_2x_r5.png 2x ,https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r5.png 1x" 
-											alt="" aria-hidden="true" role="presentation" style="width:109px;height:40px">
-									</a>
-								</li>
+								<!--
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>	
+								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>	
+								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>	
+								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+								-->
 							</ul>
 							<hr />
 						</div>
-					</div>
 					</div>
 					<footer>
 						<ul id="copyright">
@@ -138,12 +145,6 @@
 					</footer>
 				</div>
 			</article>
-
-		
-						
-						
-
-		
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
